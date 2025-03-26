@@ -1,0 +1,78 @@
+{
+    "routes": {
+        "/r/:subreddit": {
+            "description": "Fetch data for the specified subreddit",
+            "subreddits": {
+                "programming": {
+                    "title": "Programming Subreddit",
+                    "description": "A community for programming enthusiasts",
+                    "subscribers": 3500000,
+                    "posts": [
+                        {
+                            "id": 1,
+                            "title": "How to optimize React performance",
+                            "author": "reactdev42",
+                            "content": "Here are some tips for optimizing your React applications...",
+                            "upvotes": 342,
+                            "comments": 56
+                        },
+                        {
+                            "id": 2,
+                            "title": "Python vs JavaScript in 2025",
+                            "author": "codemaster99",
+                            "content": "Comparing the two most popular languages in today's ecosystem...",
+                            "upvotes": 287,
+                            "comments": 124
+                        }
+                    ]
+                },
+                "webdev": {
+                    "title": "Web Development",
+                    "description": "For web developers and designers",
+                    "subscribers": 1200000,
+                    "posts": [
+                        {
+                            "id": 1,
+                            "title": "CSS Grid vs Flexbox - When to use what",
+                            "author": "cssmaster",
+                            "content": "A comprehensive guide to choosing between CSS Grid and Flexbox...",
+                            "upvotes": 421,
+                            "comments": 87
+                        },
+                        {
+                            "id": 2,
+                            "title": "The future of web frameworks",
+                            "author": "webguru",
+                            "content": "Analyzing trends and predictions for web frameworks in the coming years...",
+                            "upvotes": 315,
+                            "comments": 93
+                        }
+                    ]
+                },
+                "nodejs": {
+                    "title": "Node.js Community",
+                    "description": "Everything about Node.js",
+                    "subscribers": 850000,
+                    "posts": [
+                        {
+                            "id": 1,
+                            "title": "Building scalable APIs with Express",
+                            "author": "nodeexpert",
+                            "content": "Learn how to create production-ready APIs with Express...",
+                            "upvotes": 267,
+                            "comments": 42
+                        },
+                        {
+                            "id": 2,
+                            "title": "Node.js performance tuning techniques",
+                            "author": "perfoptimizer",
+                            "content": "Advanced techniques to improve your Node.js application performance...",
+                            "upvotes": 198,
+                            "comments": 36
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

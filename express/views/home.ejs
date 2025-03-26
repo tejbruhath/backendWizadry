@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to the home page, current time: <%= time %> </h1>
+    <p>This is being rendered on express server!</p>
+    <br>
+    <p>Here is a cool demonstration of running js inside the html (ejs) file</p>
+    <p>Random Number between 0-10 : <%= Math.floor(Math.random() * (10 + 1)) %></p>
+    <!--ejs doesnt support teranary operators , update it does support but when written completely inside the tag.-->
+    <% if (Math.random() > 0.5) { %><!--this tag only runs js while '<%=  %> runs and renders inside the html.'-->
+        <p>the value is > 0.5</p>
+    <% } else { %>
+        <p>the value is < 0.5</p>
+    <% } %>
+
+    <ul>
+        <% let fav = ['apple', 'banana', 'mango', 'orange'] %>
+        <% for (let item of fav) { %>
+            <li><%= item %></li>
+        <% } %>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/app.css">
+
+</head>
+<body>
+    <h1>Welcome to My Off-Brand Reddit Clone</h1>
+    <h2>You're browsing <%= name %> </h2>
+    <div id="post-container">
+        <div id="post">
+            <% for(post of posts) { %>
+                <div>
+                    <h3><%= post.title %> <%= post %></h3>
+                    <p>Posted by: <%= post.author %></p>
+                    <% if(post.img !== null) { %>
+                        <img src="<%= post.img %>" alt="#">
+                    <% } %>
+                </div>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>
